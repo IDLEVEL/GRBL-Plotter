@@ -20,6 +20,7 @@
  * 2023-06-01 New file, split from Graphic2GCodeRelated.cs
 */
 
+using GrblPlotter.Properties;
 using System;
 using System.Text;
 
@@ -106,12 +107,33 @@ namespace GrblPlotter
 
             float delta = Fdistance(lastx, lasty, mx, my);
 
-            double x;
+            var feedVal = GcodeXYFeed;
+            var forceApplyFeed = false;
 
-            if (applyFeed && (gnr > 0))
+            if (Settings.Default.feedSlowDownCoef != 0 && !IsHeightMapApply)
+            {
+                var angle = Math.Abs((Math.Atan2((lastx - mx), (lasty - my)) * 180.0) / Math.PI);
+
+                if (angle > 90.0)
+                    angle = 180.0 - angle;
+
+                var feedSlowDownAngle = (double)Settings.Default.feedSlowDownAngle;
+
+                if (angle < feedSlowDownAngle)
+                {
+                    var dec = ((feedSlowDownAngle - angle) / feedSlowDownAngle) *
+                        (1.0 - ((double)Settings.Default.feedSlowDownCoef)) * feedVal;
+
+                    feedVal = (float)Math.Round(feedVal - dec);
+                }
+
+                forceApplyFeed = true;
+            }
+
+            if ((applyFeed && (gnr > 0)) || forceApplyFeed)
             {
                 if (gcodeXYFeedToolTable && gcodeComments) { cmt += " XY feed from tool-table"; }
-                feed = string.Format("F{0}", GcodeXYFeed);
+                feed = string.Format("F{0}", feedVal);
                 ApplyXYFeedRate = false;                        // don't set feed next time
             }
 

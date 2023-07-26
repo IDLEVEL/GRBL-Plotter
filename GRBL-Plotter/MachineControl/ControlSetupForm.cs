@@ -2217,5 +2217,29 @@ namespace GrblPlotter
             }
 
         }
+
+        private void OnGcodeHeaderClick(object sender, EventArgs e)
+        {
+            using (var form = new GrblPlotter.GUI.GCodeHeaderFooterForm())
+            {
+                form.SetGcode(tBImportGCHeader.Text);
+
+                if(form.ShowDialog() == DialogResult.Yes)
+                    tBImportGCHeader.Text = form.GetGcode();
+            }
+        }
+
+        private void OnGcodeFooterClick(object sender, EventArgs e)
+        {
+            using (var form = new GrblPlotter.GUI.GCodeHeaderFooterForm())
+            {
+                form.SetGcode(tBImportGCFooter.Text);
+
+                form.ShowDialog();
+
+                if (form.ShowDialog() == DialogResult.Yes)
+                    tBImportGCFooter.Text = form.GetGcode();
+            }
+        }
     }
 }

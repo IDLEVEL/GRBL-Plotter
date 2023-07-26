@@ -91,15 +91,15 @@ namespace GrblPlotter
         private const string extensionHPGL = ".plt,.hpgl";
         private const string extensionCSV = ".csv,.dat";
 
-        private const string loadFilter = "G-Code (*.nc, *.cnc, *.ngc, *.gcode, *.tap)|*.nc;*.cnc;*.ngc;*.gcode;*.tap|" +
+        private const string loadFilter =   "All files (*.*)|*.*|" +
+                                            "G-Code (*.nc, *.cnc, *.ngc, *.gcode, *.tap)|*.nc;*.cnc;*.ngc;*.gcode;*.tap|" +
                                             "SVG - Scalable Vector Graphics|*.svg|" +
                                             "DXF - Drawing Exchange Format |*.dxf|" +
                                             "HPGL - HP Graphics Language (*.plt, *.hpgl)|*.plt;*.hpgl|" +
                                             "CSV  - Comma-separated values (*.csv, *.dat)|*.csv;*.dat|" +
                                             "Drill files (*.drd, *.drl, *.dri)|*.drd;*.drl;*.dri|" +
                                             "Gerber files (*.gbr, *.ger, kicad)|*.gbr;*.ger;*.gtl;*.gbl;*.gts;*.gbs;*.gto;*.gbo;*.gko;*.g2l;*.g3l|" +
-                                            "Images (*.bmp,*.gif,*.png,*.jpg)|*.bmp;*.gif;*.png;*.jpg|" +
-                                            "All files (*.*)|*.*";
+                                            "Images (*.bmp,*.gif,*.png,*.jpg)|*.bmp;*.gif;*.png;*.jpg";
 
 
         #region MAIN-MENU FILE
@@ -108,6 +108,7 @@ namespace GrblPlotter
         {
             openFileDialog1.FileName = "";
             openFileDialog1.Filter = loadFilter;
+ 
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 LoadFile(openFileDialog1.FileName);

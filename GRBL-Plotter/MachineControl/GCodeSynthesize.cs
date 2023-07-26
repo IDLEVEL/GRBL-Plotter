@@ -75,6 +75,9 @@ namespace GrblPlotter
         { return CreateGCodeProg(false, false, false, ConvertMode.Nothing); }
         private static string CreateGCodeProg(bool replaceG23, bool splitMoves, bool applyNewZ, ConvertMode specialCmd, HeightMap Map = null)
         {
+            if (applyNewZ)
+                Gcode.IsHeightMapApply = true;
+
             Logger.Debug("+++ CreateGCodeProg replaceG23: {0}, splitMoves: {1}, applyNewZ: {2}, specialCmd: {3}", replaceG23, splitMoves, applyNewZ, specialCmd);
             if (gcodeList == null) return "";
             pathMarkSelection.Reset();
@@ -273,6 +276,9 @@ namespace GrblPlotter
                 isArc = ((gcline.motionMode == 2) || (gcline.motionMode == 3));
                 coordList.Add(new CoordByLine(iCode, gcline.figureNumber, (XyzPoint)gcline.actualPos, (XyzPoint)gcline.actualPos, gcline.motionMode, gcline.alpha, isArc));
             }
+
+            Gcode.IsHeightMapApply = false;
+
             return newCode.ToString().Replace(',', '.');
         }
 

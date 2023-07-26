@@ -510,6 +510,7 @@ namespace GrblPlotter
 
         private static bool useValueFromToolTable = false;
         public static float GcodeXYFeed { get; set; } //= 1999;         // XY feed to apply for G1
+        public static bool IsHeightMapApply { get; set; }
         private static bool gcodeXYFeedToolTable = false; // from Tool Table
         private static bool gcodeComments = true;       // if true insert additional comments into GCode
 
