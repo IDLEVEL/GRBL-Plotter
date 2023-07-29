@@ -47,28 +47,29 @@ namespace GrblPlotter
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlSetupForm));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabControl_Level1 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.cBshowImportDialog = new System.Windows.Forms.CheckBox();
             this.tabControl1_Level2 = new System.Windows.Forms.TabControl();
             this.graphicImport1 = new System.Windows.Forms.TabPage();
             this.BtnHelp_Pathmodification = new System.Windows.Forms.TabControl();
@@ -413,6 +414,10 @@ namespace GrblPlotter
             this.CbAux1Enable = new System.Windows.Forms.CheckBox();
             this.graphicImport2 = new System.Windows.Forms.TabPage();
             this.tab1_2gB1 = new System.Windows.Forms.GroupBox();
+            this.label101 = new System.Windows.Forms.Label();
+            this.label100 = new System.Windows.Forms.Label();
+            this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
             this.BtnHelp_General = new System.Windows.Forms.Button();
             this.label32 = new System.Windows.Forms.Label();
             this.tBImportGCToolChange = new System.Windows.Forms.TextBox();
@@ -544,6 +549,8 @@ namespace GrblPlotter
             this.btnUseCaseLoad = new System.Windows.Forms.Button();
             this.tBUseCaseInfo = new System.Windows.Forms.TextBox();
             this.lBUseCase = new System.Windows.Forms.ListBox();
+            this.btnReloadFile = new System.Windows.Forms.Button();
+            this.btnApplyChangings = new System.Windows.Forms.Button();
             this.tabPage14 = new System.Windows.Forms.TabPage();
             this.tab2gB1 = new System.Windows.Forms.GroupBox();
             this.BtnHelp_TooltableSet = new System.Windows.Forms.Button();
@@ -607,7 +614,6 @@ namespace GrblPlotter
             this.tabPage21 = new System.Windows.Forms.TabPage();
             this.tabControl4_Level2 = new System.Windows.Forms.TabControl();
             this.tabPage13 = new System.Windows.Forms.TabPage();
-            this.BtnHelp_Programstart = new System.Windows.Forms.Button();
             this.groupBox24 = new System.Windows.Forms.GroupBox();
             this.label53 = new System.Windows.Forms.Label();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
@@ -619,6 +625,8 @@ namespace GrblPlotter
             this.LblPinDescriptionD1 = new System.Windows.Forms.Label();
             this.TbPinDescriptionD0 = new System.Windows.Forms.TextBox();
             this.LblPinDescriptionD0 = new System.Windows.Forms.Label();
+            this.tab5gB2 = new System.Windows.Forms.GroupBox();
+            this.cBSerialDIY = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cBLogLevel4 = new System.Windows.Forms.CheckBox();
             this.cBLogLevel3 = new System.Windows.Forms.CheckBox();
@@ -657,10 +665,9 @@ namespace GrblPlotter
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.cBSerialMinimize = new System.Windows.Forms.CheckBox();
             this.cBSerial2 = new System.Windows.Forms.CheckBox();
-            this.tab5gB2 = new System.Windows.Forms.GroupBox();
-            this.cBSerialDIY = new System.Windows.Forms.CheckBox();
             this.cBSerialPortFixer = new System.Windows.Forms.CheckBox();
             this.groupBox25 = new System.Windows.Forms.GroupBox();
+            this.BtnHelp_Programstart = new System.Windows.Forms.Button();
             this.BtnOpenLogFile = new System.Windows.Forms.Button();
             this.cBExtendedLoggingCOM = new System.Windows.Forms.CheckBox();
             this.tabPage26 = new System.Windows.Forms.TabPage();
@@ -732,7 +739,6 @@ namespace GrblPlotter
             this.cBShowStreamingProgress = new System.Windows.Forms.CheckBox();
             this.cBBackgroundImage = new System.Windows.Forms.CheckBox();
             this.tab4gB1 = new System.Windows.Forms.GroupBox();
-            this.BtnHelp_Flowcontrol = new System.Windows.Forms.Button();
             this.cBpollIntervalReduce = new System.Windows.Forms.CheckBox();
             this.tab4gB1lbl1 = new System.Windows.Forms.Label();
             this.cBoxPollInterval = new System.Windows.Forms.ComboBox();
@@ -742,6 +748,7 @@ namespace GrblPlotter
             this.tab4gB3lbl1 = new System.Windows.Forms.Label();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.tab4gB2 = new System.Windows.Forms.GroupBox();
+            this.BtnHelp_Flowcontrol = new System.Windows.Forms.Button();
             this.cBresetSendCode = new System.Windows.Forms.CheckBox();
             this.tBresetSendCode = new System.Windows.Forms.TextBox();
             this.cBrestoreCoordReset = new System.Windows.Forms.CheckBox();
@@ -807,7 +814,6 @@ namespace GrblPlotter
             this.cBShapeRect = new System.Windows.Forms.CheckBox();
             this.cBShapeCircle = new System.Windows.Forms.CheckBox();
             this.tabControl5_Level2 = new System.Windows.Forms.TabPage();
-            this.BtnHelp_Notifier = new System.Windows.Forms.Button();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.tbNotifierPBChannel = new System.Windows.Forms.TextBox();
@@ -827,6 +833,7 @@ namespace GrblPlotter
             this.lblNotifier8 = new System.Windows.Forms.Label();
             this.lblNotifierMsg1 = new System.Windows.Forms.Label();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.BtnHelp_Notifier = new System.Windows.Forms.Button();
             this.cbNotifierEmailEnable = new System.Windows.Forms.CheckBox();
             this.btn_notifierMail_Test = new System.Windows.Forms.Button();
             this.tbNotifier5 = new System.Windows.Forms.TextBox();
@@ -846,6 +853,7 @@ namespace GrblPlotter
             this.tabPage22 = new System.Windows.Forms.TabPage();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage23 = new System.Windows.Forms.TabPage();
+            this.BtnHelp_Buttons = new System.Windows.Forms.Button();
             this.tab6lbl1 = new System.Windows.Forms.Label();
             this.tab6lbl2 = new System.Windows.Forms.Label();
             this.lblFilePath = new System.Windows.Forms.Label();
@@ -855,6 +863,7 @@ namespace GrblPlotter
             this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.color = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.BtnHelp_Hotkeys = new System.Windows.Forms.Button();
             this.tab9gB1 = new System.Windows.Forms.GroupBox();
             this.btnOpenHotkeys = new System.Windows.Forms.Button();
             this.lblPathHotkeys = new System.Windows.Forms.Label();
@@ -864,6 +873,7 @@ namespace GrblPlotter
             this.tab9gB1lbl1 = new System.Windows.Forms.Label();
             this.tB_kP_Left1 = new System.Windows.Forms.TextBox();
             this.tabPage24 = new System.Windows.Forms.TabPage();
+            this.BtnHelp_Gamepad = new System.Windows.Forms.Button();
             this.tab7gB1 = new System.Windows.Forms.GroupBox();
             this.tBGPPOVC07 = new System.Windows.Forms.TextBox();
             this.tBGPPOVC06 = new System.Windows.Forms.TextBox();
@@ -949,6 +959,7 @@ namespace GrblPlotter
             this.lblButtons6 = new System.Windows.Forms.Label();
             this.lblButtons7 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.BtnHelp_Joystick = new System.Windows.Forms.Button();
             this.tab8gB1 = new System.Windows.Forms.GroupBox();
             this.groupBox33 = new System.Windows.Forms.GroupBox();
             this.RbApperance2 = new System.Windows.Forms.RadioButton();
@@ -998,6 +1009,7 @@ namespace GrblPlotter
             this.nUDJoyXYStep2 = new System.Windows.Forms.NumericUpDown();
             this.nUDJoyXYStep1 = new System.Windows.Forms.NumericUpDown();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.BtnHelp_2dview = new System.Windows.Forms.Button();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.groupBox32 = new System.Windows.Forms.GroupBox();
             this.CbDuplicateAddHeight = new System.Windows.Forms.CheckBox();
@@ -1046,6 +1058,7 @@ namespace GrblPlotter
             this.btnColorRuler = new System.Windows.Forms.Button();
             this.btnColorBackground = new System.Windows.Forms.Button();
             this.tabPage32 = new System.Windows.Forms.TabPage();
+            this.BtnHelp_Projector = new System.Windows.Forms.Button();
             this.GbProjector = new System.Windows.Forms.GroupBox();
             this.CbProjectorScaleEnable = new System.Windows.Forms.CheckBox();
             this.GbProjectorScale = new System.Windows.Forms.GroupBox();
@@ -1084,6 +1097,7 @@ namespace GrblPlotter
             this.NudProjectorPenDown = new System.Windows.Forms.NumericUpDown();
             this.NudProjectorTool = new System.Windows.Forms.NumericUpDown();
             this.tabPage33 = new System.Windows.Forms.TabPage();
+            this.BtnHelp_Misc2 = new System.Windows.Forms.Button();
             this.groupBox37 = new System.Windows.Forms.GroupBox();
             this.numericUpDown17 = new System.Windows.Forms.NumericUpDown();
             this.label95 = new System.Windows.Forms.Label();
@@ -1126,19 +1140,10 @@ namespace GrblPlotter
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.btnReloadFile = new System.Windows.Forms.Button();
-            this.btnApplyChangings = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.cBshowImportDialog = new System.Windows.Forms.CheckBox();
-            this.BtnHelp_Buttons = new System.Windows.Forms.Button();
-            this.BtnHelp_Hotkeys = new System.Windows.Forms.Button();
-            this.BtnHelp_Gamepad = new System.Windows.Forms.Button();
-            this.BtnHelp_Joystick = new System.Windows.Forms.Button();
-            this.BtnHelp_2dview = new System.Windows.Forms.Button();
-            this.BtnHelp_Projector = new System.Windows.Forms.Button();
-            this.BtnHelp_Misc2 = new System.Windows.Forms.Button();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.tabControl_Level1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabControl1_Level2.SuspendLayout();
@@ -1266,6 +1271,8 @@ namespace GrblPlotter
             ((System.ComponentModel.ISupportInitialize)(this.NudAux1Factor)).BeginInit();
             this.graphicImport2.SuspendLayout();
             this.tab1_2gB1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nUDImportGCFeedXY)).BeginInit();
             this.tab1_2gB2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nUDImportGCSSpeed)).BeginInit();
@@ -1320,6 +1327,7 @@ namespace GrblPlotter
             this.tabControl4_Level2.SuspendLayout();
             this.tabPage13.SuspendLayout();
             this.groupBox24.SuspendLayout();
+            this.tab5gB2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.gBLoggingOptions.SuspendLayout();
             this.groupBox11.SuspendLayout();
@@ -1328,7 +1336,6 @@ namespace GrblPlotter
             this.tab5gB4.SuspendLayout();
             this.tab5gB1.SuspendLayout();
             this.groupBox13.SuspendLayout();
-            this.tab5gB2.SuspendLayout();
             this.groupBox25.SuspendLayout();
             this.tabPage26.SuspendLayout();
             this.GbAccessoryRunTime.SuspendLayout();
@@ -1490,10 +1497,22 @@ namespace GrblPlotter
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.cBshowImportDialog);
             this.tabPage3.Controls.Add(this.tabControl1_Level2);
+            this.tabPage3.Controls.Add(this.btnReloadFile);
+            this.tabPage3.Controls.Add(this.btnApplyChangings);
             resources.ApplyResources(this.tabPage3, "tabPage3");
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // cBshowImportDialog
+            // 
+            resources.ApplyResources(this.cBshowImportDialog, "cBshowImportDialog");
+            this.cBshowImportDialog.Checked = global::GrblPlotter.Properties.Settings.Default.importShowUseCaseDialog;
+            this.cBshowImportDialog.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cBshowImportDialog.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::GrblPlotter.Properties.Settings.Default, "importShowUseCaseDialog", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cBshowImportDialog.Name = "cBshowImportDialog";
+            this.cBshowImportDialog.UseVisualStyleBackColor = true;
             // 
             // tabControl1_Level2
             // 
@@ -4882,6 +4901,11 @@ namespace GrblPlotter
             // tab1_2gB1
             // 
             this.tab1_2gB1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tab1_2gB1.Controls.Add(this.checkBox5);
+            this.tab1_2gB1.Controls.Add(this.label101);
+            this.tab1_2gB1.Controls.Add(this.label100);
+            this.tab1_2gB1.Controls.Add(this.numericUpDown19);
+            this.tab1_2gB1.Controls.Add(this.numericUpDown18);
             this.tab1_2gB1.Controls.Add(this.BtnHelp_General);
             this.tab1_2gB1.Controls.Add(this.label32);
             this.tab1_2gB1.Controls.Add(this.tBImportGCToolChange);
@@ -4901,6 +4925,38 @@ namespace GrblPlotter
             resources.ApplyResources(this.tab1_2gB1, "tab1_2gB1");
             this.tab1_2gB1.Name = "tab1_2gB1";
             this.tab1_2gB1.TabStop = false;
+            // 
+            // label101
+            // 
+            resources.ApplyResources(this.label101, "label101");
+            this.label101.Name = "label101";
+            this.toolTip1.SetToolTip(this.label101, resources.GetString("label101.ToolTip"));
+            // 
+            // label100
+            // 
+            resources.ApplyResources(this.label100, "label100");
+            this.label100.Name = "label100";
+            this.toolTip1.SetToolTip(this.label100, resources.GetString("label100.ToolTip"));
+            // 
+            // numericUpDown19
+            // 
+            this.numericUpDown19.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::GrblPlotter.Properties.Settings.Default, "feedSlowDownCoeff", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.numericUpDown19.DecimalPlaces = 2;
+            this.numericUpDown19.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            resources.ApplyResources(this.numericUpDown19, "numericUpDown19");
+            this.numericUpDown19.Name = "numericUpDown19";
+            this.numericUpDown19.Value = global::GrblPlotter.Properties.Settings.Default.feedSlowDownCoeff;
+            // 
+            // numericUpDown18
+            // 
+            this.numericUpDown18.DataBindings.Add(new System.Windows.Forms.Binding("Value", global::GrblPlotter.Properties.Settings.Default, "feedSlowDownAngle", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            resources.ApplyResources(this.numericUpDown18, "numericUpDown18");
+            this.numericUpDown18.Name = "numericUpDown18";
+            this.numericUpDown18.Value = global::GrblPlotter.Properties.Settings.Default.feedSlowDownAngle;
             // 
             // BtnHelp_General
             // 
@@ -6176,6 +6232,24 @@ namespace GrblPlotter
             this.lBUseCase.Name = "lBUseCase";
             this.lBUseCase.SelectedIndexChanged += new System.EventHandler(this.LbUseCase_SelectedIndexChanged);
             // 
+            // btnReloadFile
+            // 
+            resources.ApplyResources(this.btnReloadFile, "btnReloadFile");
+            this.btnReloadFile.BackColor = System.Drawing.Color.LightGreen;
+            this.btnReloadFile.Name = "btnReloadFile";
+            this.toolTip1.SetToolTip(this.btnReloadFile, resources.GetString("btnReloadFile.ToolTip"));
+            this.btnReloadFile.UseVisualStyleBackColor = false;
+            this.btnReloadFile.Click += new System.EventHandler(this.BtnReloadFile_Click);
+            // 
+            // btnApplyChangings
+            // 
+            resources.ApplyResources(this.btnApplyChangings, "btnApplyChangings");
+            this.btnApplyChangings.BackColor = System.Drawing.Color.PeachPuff;
+            this.btnApplyChangings.Name = "btnApplyChangings";
+            this.toolTip1.SetToolTip(this.btnApplyChangings, resources.GetString("btnApplyChangings.ToolTip"));
+            this.btnApplyChangings.UseVisualStyleBackColor = false;
+            this.btnApplyChangings.Click += new System.EventHandler(this.BtnApplyChangings_Click);
+            // 
             // tabPage14
             // 
             this.tabPage14.Controls.Add(this.tab2gB1);
@@ -6422,155 +6496,155 @@ namespace GrblPlotter
             // 
             // Column1
             // 
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle20.Format = "N0";
-            dataGridViewCellStyle20.NullValue = "2";
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle20;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.Format = "N0";
+            dataGridViewCellStyle1.NullValue = "2";
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle1;
             resources.ApplyResources(this.Column1, "Column1");
             this.Column1.MaxInputLength = 3;
             this.Column1.Name = "Column1";
             // 
             // Column2
             // 
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle21.NullValue = "FFFFFF";
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.NullValue = "FFFFFF";
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle2;
             resources.ApplyResources(this.Column2, "Column2");
             this.Column2.MaxInputLength = 6;
             this.Column2.Name = "Column2";
             // 
             // Column3
             // 
-            dataGridViewCellStyle22.NullValue = "edit to add new entry";
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle3.NullValue = "edit to add new entry";
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle3;
             resources.ApplyResources(this.Column3, "Column3");
             this.Column3.MaxInputLength = 20;
             this.Column3.Name = "Column3";
             // 
             // Column4
             // 
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle23.Format = "N2";
-            dataGridViewCellStyle23.NullValue = "0";
-            this.Column4.DefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle4.Format = "N2";
+            dataGridViewCellStyle4.NullValue = "0";
+            this.Column4.DefaultCellStyle = dataGridViewCellStyle4;
             resources.ApplyResources(this.Column4, "Column4");
             this.Column4.MaxInputLength = 8;
             this.Column4.Name = "Column4";
             // 
             // Column5
             // 
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle24.Format = "N2";
-            dataGridViewCellStyle24.NullValue = "0";
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle5.Format = "N2";
+            dataGridViewCellStyle5.NullValue = "0";
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle5;
             resources.ApplyResources(this.Column5, "Column5");
             this.Column5.MaxInputLength = 8;
             this.Column5.Name = "Column5";
             // 
             // Column6
             // 
-            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle25.Format = "N2";
-            dataGridViewCellStyle25.NullValue = "0";
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle6.Format = "N2";
+            dataGridViewCellStyle6.NullValue = "0";
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle6;
             resources.ApplyResources(this.Column6, "Column6");
             this.Column6.MaxInputLength = 8;
             this.Column6.Name = "Column6";
             // 
             // Column16
             // 
-            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle26.Format = "N2";
-            dataGridViewCellStyle26.NullValue = "0";
-            this.Column16.DefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle7.Format = "N2";
+            dataGridViewCellStyle7.NullValue = "0";
+            this.Column16.DefaultCellStyle = dataGridViewCellStyle7;
             resources.ApplyResources(this.Column16, "Column16");
             this.Column16.MaxInputLength = 8;
             this.Column16.Name = "Column16";
             // 
             // Column7
             // 
-            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle27.Format = "N2";
-            dataGridViewCellStyle27.NullValue = "3,0";
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle8.Format = "N2";
+            dataGridViewCellStyle8.NullValue = "3,0";
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle8;
             resources.ApplyResources(this.Column7, "Column7");
             this.Column7.MaxInputLength = 8;
             this.Column7.Name = "Column7";
             // 
             // Column8
             // 
-            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle28.Format = "N0";
-            dataGridViewCellStyle28.NullValue = "800";
-            this.Column8.DefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle9.Format = "N0";
+            dataGridViewCellStyle9.NullValue = "800";
+            this.Column8.DefaultCellStyle = dataGridViewCellStyle9;
             resources.ApplyResources(this.Column8, "Column8");
             this.Column8.MaxInputLength = 6;
             this.Column8.Name = "Column8";
             // 
             // Column10
             // 
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle29.Format = "N0";
-            dataGridViewCellStyle29.NullValue = "500";
-            this.Column10.DefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle10.Format = "N0";
+            dataGridViewCellStyle10.NullValue = "500";
+            this.Column10.DefaultCellStyle = dataGridViewCellStyle10;
             resources.ApplyResources(this.Column10, "Column10");
             this.Column10.MaxInputLength = 6;
             this.Column10.Name = "Column10";
             // 
             // Column15
             // 
-            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle30.Format = "N2";
-            dataGridViewCellStyle30.NullValue = "2";
-            this.Column15.DefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle11.Format = "N2";
+            dataGridViewCellStyle11.NullValue = "2";
+            this.Column15.DefaultCellStyle = dataGridViewCellStyle11;
             resources.ApplyResources(this.Column15, "Column15");
             this.Column15.MaxInputLength = 8;
             this.Column15.Name = "Column15";
             // 
             // Column9
             // 
-            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle31.Format = "N2";
-            dataGridViewCellStyle31.NullValue = "-3";
-            this.Column9.DefaultCellStyle = dataGridViewCellStyle31;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle12.Format = "N2";
+            dataGridViewCellStyle12.NullValue = "-3";
+            this.Column9.DefaultCellStyle = dataGridViewCellStyle12;
             resources.ApplyResources(this.Column9, "Column9");
             this.Column9.MaxInputLength = 8;
             this.Column9.Name = "Column9";
             // 
             // Column13
             // 
-            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle32.Format = "N2";
-            dataGridViewCellStyle32.NullValue = "1";
-            this.Column13.DefaultCellStyle = dataGridViewCellStyle32;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle13.Format = "N2";
+            dataGridViewCellStyle13.NullValue = "1";
+            this.Column13.DefaultCellStyle = dataGridViewCellStyle13;
             resources.ApplyResources(this.Column13, "Column13");
             this.Column13.MaxInputLength = 8;
             this.Column13.Name = "Column13";
             // 
             // Column11
             // 
-            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle33.Format = "N0";
-            dataGridViewCellStyle33.NullValue = "10000";
-            this.Column11.DefaultCellStyle = dataGridViewCellStyle33;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle14.Format = "N0";
+            dataGridViewCellStyle14.NullValue = "10000";
+            this.Column11.DefaultCellStyle = dataGridViewCellStyle14;
             resources.ApplyResources(this.Column11, "Column11");
             this.Column11.MaxInputLength = 8;
             this.Column11.Name = "Column11";
             // 
             // Column12
             // 
-            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle34.Format = "N0";
-            dataGridViewCellStyle34.NullValue = "100";
-            this.Column12.DefaultCellStyle = dataGridViewCellStyle34;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle15.Format = "N0";
+            dataGridViewCellStyle15.NullValue = "100";
+            this.Column12.DefaultCellStyle = dataGridViewCellStyle15;
             resources.ApplyResources(this.Column12, "Column12");
             this.Column12.MaxInputLength = 6;
             this.Column12.Name = "Column12";
             // 
             // Column14
             // 
-            dataGridViewCellStyle35.NullValue = " ";
-            this.Column14.DefaultCellStyle = dataGridViewCellStyle35;
+            dataGridViewCellStyle16.NullValue = " ";
+            this.Column14.DefaultCellStyle = dataGridViewCellStyle16;
             resources.ApplyResources(this.Column14, "Column14");
             this.Column14.MaxInputLength = 32;
             this.Column14.Name = "Column14";
@@ -6793,16 +6867,6 @@ namespace GrblPlotter
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.UseVisualStyleBackColor = true;
             // 
-            // BtnHelp_Programstart
-            // 
-            this.BtnHelp_Programstart.BackColor = System.Drawing.Color.SkyBlue;
-            resources.ApplyResources(this.BtnHelp_Programstart, "BtnHelp_Programstart");
-            this.BtnHelp_Programstart.Name = "BtnHelp_Programstart";
-            this.BtnHelp_Programstart.Tag = "id=form-setup-4#program-start";
-            this.toolTip1.SetToolTip(this.BtnHelp_Programstart, resources.GetString("BtnHelp_Programstart.ToolTip"));
-            this.BtnHelp_Programstart.UseVisualStyleBackColor = false;
-            this.BtnHelp_Programstart.Click += new System.EventHandler(this.BtnHelp_Click);
-            // 
             // groupBox24
             // 
             this.groupBox24.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -6880,6 +6944,21 @@ namespace GrblPlotter
             // 
             resources.ApplyResources(this.LblPinDescriptionD0, "LblPinDescriptionD0");
             this.LblPinDescriptionD0.Name = "LblPinDescriptionD0";
+            // 
+            // tab5gB2
+            // 
+            this.tab5gB2.Controls.Add(this.cBSerialDIY);
+            resources.ApplyResources(this.tab5gB2, "tab5gB2");
+            this.tab5gB2.Name = "tab5gB2";
+            this.tab5gB2.TabStop = false;
+            // 
+            // cBSerialDIY
+            // 
+            resources.ApplyResources(this.cBSerialDIY, "cBSerialDIY");
+            this.cBSerialDIY.Checked = global::GrblPlotter.Properties.Settings.Default.ctrlUseSerialDIY;
+            this.cBSerialDIY.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::GrblPlotter.Properties.Settings.Default, "ctrlUseSerialDIY", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.cBSerialDIY.Name = "cBSerialDIY";
+            this.cBSerialDIY.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -7220,21 +7299,6 @@ namespace GrblPlotter
             this.toolTip1.SetToolTip(this.cBSerial2, resources.GetString("cBSerial2.ToolTip"));
             this.cBSerial2.UseVisualStyleBackColor = true;
             // 
-            // tab5gB2
-            // 
-            this.tab5gB2.Controls.Add(this.cBSerialDIY);
-            resources.ApplyResources(this.tab5gB2, "tab5gB2");
-            this.tab5gB2.Name = "tab5gB2";
-            this.tab5gB2.TabStop = false;
-            // 
-            // cBSerialDIY
-            // 
-            resources.ApplyResources(this.cBSerialDIY, "cBSerialDIY");
-            this.cBSerialDIY.Checked = global::GrblPlotter.Properties.Settings.Default.ctrlUseSerialDIY;
-            this.cBSerialDIY.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::GrblPlotter.Properties.Settings.Default, "ctrlUseSerialDIY", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.cBSerialDIY.Name = "cBSerialDIY";
-            this.cBSerialDIY.UseVisualStyleBackColor = true;
-            // 
             // cBSerialPortFixer
             // 
             resources.ApplyResources(this.cBSerialPortFixer, "cBSerialPortFixer");
@@ -7253,6 +7317,16 @@ namespace GrblPlotter
             resources.ApplyResources(this.groupBox25, "groupBox25");
             this.groupBox25.Name = "groupBox25";
             this.groupBox25.TabStop = false;
+            // 
+            // BtnHelp_Programstart
+            // 
+            this.BtnHelp_Programstart.BackColor = System.Drawing.Color.SkyBlue;
+            resources.ApplyResources(this.BtnHelp_Programstart, "BtnHelp_Programstart");
+            this.BtnHelp_Programstart.Name = "BtnHelp_Programstart";
+            this.BtnHelp_Programstart.Tag = "id=form-setup-4#program-start";
+            this.toolTip1.SetToolTip(this.BtnHelp_Programstart, resources.GetString("BtnHelp_Programstart.ToolTip"));
+            this.BtnHelp_Programstart.UseVisualStyleBackColor = false;
+            this.BtnHelp_Programstart.Click += new System.EventHandler(this.BtnHelp_Click);
             // 
             // BtnOpenLogFile
             // 
@@ -7924,16 +7998,6 @@ namespace GrblPlotter
             this.tab4gB1.Name = "tab4gB1";
             this.tab4gB1.TabStop = false;
             // 
-            // BtnHelp_Flowcontrol
-            // 
-            this.BtnHelp_Flowcontrol.BackColor = System.Drawing.Color.SkyBlue;
-            resources.ApplyResources(this.BtnHelp_Flowcontrol, "BtnHelp_Flowcontrol");
-            this.BtnHelp_Flowcontrol.Name = "BtnHelp_Flowcontrol";
-            this.BtnHelp_Flowcontrol.Tag = "id=form-setup-4#flow-control";
-            this.toolTip1.SetToolTip(this.BtnHelp_Flowcontrol, resources.GetString("BtnHelp_Flowcontrol.ToolTip"));
-            this.BtnHelp_Flowcontrol.UseVisualStyleBackColor = false;
-            this.BtnHelp_Flowcontrol.Click += new System.EventHandler(this.BtnHelp_Click);
-            // 
             // cBpollIntervalReduce
             // 
             this.cBpollIntervalReduce.Checked = global::GrblPlotter.Properties.Settings.Default.grblPollIntervalReduce;
@@ -8022,6 +8086,16 @@ namespace GrblPlotter
             resources.ApplyResources(this.tab4gB2, "tab4gB2");
             this.tab4gB2.Name = "tab4gB2";
             this.tab4gB2.TabStop = false;
+            // 
+            // BtnHelp_Flowcontrol
+            // 
+            this.BtnHelp_Flowcontrol.BackColor = System.Drawing.Color.SkyBlue;
+            resources.ApplyResources(this.BtnHelp_Flowcontrol, "BtnHelp_Flowcontrol");
+            this.BtnHelp_Flowcontrol.Name = "BtnHelp_Flowcontrol";
+            this.BtnHelp_Flowcontrol.Tag = "id=form-setup-4#flow-control";
+            this.toolTip1.SetToolTip(this.BtnHelp_Flowcontrol, resources.GetString("BtnHelp_Flowcontrol.ToolTip"));
+            this.BtnHelp_Flowcontrol.UseVisualStyleBackColor = false;
+            this.BtnHelp_Flowcontrol.Click += new System.EventHandler(this.BtnHelp_Click);
             // 
             // cBresetSendCode
             // 
@@ -8559,16 +8633,6 @@ namespace GrblPlotter
             this.tabControl5_Level2.Name = "tabControl5_Level2";
             this.tabControl5_Level2.UseVisualStyleBackColor = true;
             // 
-            // BtnHelp_Notifier
-            // 
-            this.BtnHelp_Notifier.BackColor = System.Drawing.Color.SkyBlue;
-            resources.ApplyResources(this.BtnHelp_Notifier, "BtnHelp_Notifier");
-            this.BtnHelp_Notifier.Name = "BtnHelp_Notifier";
-            this.BtnHelp_Notifier.Tag = "id=form-setup-4#notifier";
-            this.toolTip1.SetToolTip(this.BtnHelp_Notifier, resources.GetString("BtnHelp_Notifier.ToolTip"));
-            this.BtnHelp_Notifier.UseVisualStyleBackColor = false;
-            this.BtnHelp_Notifier.Click += new System.EventHandler(this.BtnHelp_Click);
-            // 
             // groupBox18
             // 
             this.groupBox18.Controls.Add(this.button1);
@@ -8733,6 +8797,16 @@ namespace GrblPlotter
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.TabStop = false;
             // 
+            // BtnHelp_Notifier
+            // 
+            this.BtnHelp_Notifier.BackColor = System.Drawing.Color.SkyBlue;
+            resources.ApplyResources(this.BtnHelp_Notifier, "BtnHelp_Notifier");
+            this.BtnHelp_Notifier.Name = "BtnHelp_Notifier";
+            this.BtnHelp_Notifier.Tag = "id=form-setup-4#notifier";
+            this.toolTip1.SetToolTip(this.BtnHelp_Notifier, resources.GetString("BtnHelp_Notifier.ToolTip"));
+            this.BtnHelp_Notifier.UseVisualStyleBackColor = false;
+            this.BtnHelp_Notifier.Click += new System.EventHandler(this.BtnHelp_Click);
+            // 
             // cbNotifierEmailEnable
             // 
             resources.ApplyResources(this.cbNotifierEmailEnable, "cbNotifierEmailEnable");
@@ -8875,6 +8949,16 @@ namespace GrblPlotter
             this.tabPage23.Name = "tabPage23";
             this.tabPage23.UseVisualStyleBackColor = true;
             // 
+            // BtnHelp_Buttons
+            // 
+            this.BtnHelp_Buttons.BackColor = System.Drawing.Color.SkyBlue;
+            resources.ApplyResources(this.BtnHelp_Buttons, "BtnHelp_Buttons");
+            this.BtnHelp_Buttons.Name = "BtnHelp_Buttons";
+            this.BtnHelp_Buttons.Tag = "id=form-setup-5#custom-buttons";
+            this.toolTip1.SetToolTip(this.BtnHelp_Buttons, resources.GetString("BtnHelp_Buttons.ToolTip"));
+            this.BtnHelp_Buttons.UseVisualStyleBackColor = false;
+            this.BtnHelp_Buttons.Click += new System.EventHandler(this.BtnHelp_Click);
+            // 
             // tab6lbl1
             // 
             resources.ApplyResources(this.tab6lbl1, "tab6lbl1");
@@ -8908,8 +8992,8 @@ namespace GrblPlotter
             // 
             // Column20
             // 
-            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            this.Column20.DefaultCellStyle = dataGridViewCellStyle36;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            this.Column20.DefaultCellStyle = dataGridViewCellStyle17;
             resources.ApplyResources(this.Column20, "Column20");
             this.Column20.MaxInputLength = 2;
             this.Column20.Name = "Column20";
@@ -8919,8 +9003,8 @@ namespace GrblPlotter
             // 
             // Column21
             // 
-            dataGridViewCellStyle37.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column21.DefaultCellStyle = dataGridViewCellStyle37;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column21.DefaultCellStyle = dataGridViewCellStyle18;
             resources.ApplyResources(this.Column21, "Column21");
             this.Column21.MaxInputLength = 100;
             this.Column21.Name = "Column21";
@@ -8929,8 +9013,8 @@ namespace GrblPlotter
             // 
             // Column22
             // 
-            dataGridViewCellStyle38.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.Column22.DefaultCellStyle = dataGridViewCellStyle38;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.Column22.DefaultCellStyle = dataGridViewCellStyle19;
             resources.ApplyResources(this.Column22, "Column22");
             this.Column22.MaxInputLength = 300;
             this.Column22.Name = "Column22";
@@ -8949,6 +9033,16 @@ namespace GrblPlotter
             resources.ApplyResources(this.tabPage2, "tabPage2");
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // BtnHelp_Hotkeys
+            // 
+            this.BtnHelp_Hotkeys.BackColor = System.Drawing.Color.SkyBlue;
+            resources.ApplyResources(this.BtnHelp_Hotkeys, "BtnHelp_Hotkeys");
+            this.BtnHelp_Hotkeys.Name = "BtnHelp_Hotkeys";
+            this.BtnHelp_Hotkeys.Tag = "id=form-setup-5#hotkeys";
+            this.toolTip1.SetToolTip(this.BtnHelp_Hotkeys, resources.GetString("BtnHelp_Hotkeys.ToolTip"));
+            this.BtnHelp_Hotkeys.UseVisualStyleBackColor = false;
+            this.BtnHelp_Hotkeys.Click += new System.EventHandler(this.BtnHelp_Click);
             // 
             // tab9gB1
             // 
@@ -9014,6 +9108,16 @@ namespace GrblPlotter
             this.tabPage24.UseVisualStyleBackColor = true;
             this.tabPage24.Enter += new System.EventHandler(this.TabPage24_Enter);
             this.tabPage24.Leave += new System.EventHandler(this.TabPage24_Leave);
+            // 
+            // BtnHelp_Gamepad
+            // 
+            this.BtnHelp_Gamepad.BackColor = System.Drawing.Color.SkyBlue;
+            resources.ApplyResources(this.BtnHelp_Gamepad, "BtnHelp_Gamepad");
+            this.BtnHelp_Gamepad.Name = "BtnHelp_Gamepad";
+            this.BtnHelp_Gamepad.Tag = "id=form-setup-5#gamepad";
+            this.toolTip1.SetToolTip(this.BtnHelp_Gamepad, resources.GetString("BtnHelp_Gamepad.ToolTip"));
+            this.BtnHelp_Gamepad.UseVisualStyleBackColor = false;
+            this.BtnHelp_Gamepad.Click += new System.EventHandler(this.BtnHelp_Click);
             // 
             // tab7gB1
             // 
@@ -9727,6 +9831,16 @@ namespace GrblPlotter
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // BtnHelp_Joystick
+            // 
+            this.BtnHelp_Joystick.BackColor = System.Drawing.Color.SkyBlue;
+            resources.ApplyResources(this.BtnHelp_Joystick, "BtnHelp_Joystick");
+            this.BtnHelp_Joystick.Name = "BtnHelp_Joystick";
+            this.BtnHelp_Joystick.Tag = "id=form-setup-5#joystick";
+            this.toolTip1.SetToolTip(this.BtnHelp_Joystick, resources.GetString("BtnHelp_Joystick.ToolTip"));
+            this.BtnHelp_Joystick.UseVisualStyleBackColor = false;
+            this.BtnHelp_Joystick.Click += new System.EventHandler(this.BtnHelp_Click);
+            // 
             // tab8gB1
             // 
             this.tab8gB1.Controls.Add(this.groupBox33);
@@ -10403,6 +10517,16 @@ namespace GrblPlotter
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
+            // BtnHelp_2dview
+            // 
+            this.BtnHelp_2dview.BackColor = System.Drawing.Color.SkyBlue;
+            resources.ApplyResources(this.BtnHelp_2dview, "BtnHelp_2dview");
+            this.BtnHelp_2dview.Name = "BtnHelp_2dview";
+            this.BtnHelp_2dview.Tag = "id=form-setup-5#2dview";
+            this.toolTip1.SetToolTip(this.BtnHelp_2dview, resources.GetString("BtnHelp_2dview.ToolTip"));
+            this.BtnHelp_2dview.UseVisualStyleBackColor = false;
+            this.BtnHelp_2dview.Click += new System.EventHandler(this.BtnHelp_Click);
+            // 
             // groupBox14
             // 
             this.groupBox14.Controls.Add(this.groupBox32);
@@ -10964,6 +11088,16 @@ namespace GrblPlotter
             this.tabPage32.Name = "tabPage32";
             this.tabPage32.UseVisualStyleBackColor = true;
             // 
+            // BtnHelp_Projector
+            // 
+            resources.ApplyResources(this.BtnHelp_Projector, "BtnHelp_Projector");
+            this.BtnHelp_Projector.BackColor = System.Drawing.Color.SkyBlue;
+            this.BtnHelp_Projector.Name = "BtnHelp_Projector";
+            this.BtnHelp_Projector.Tag = "id=form-setup-5#projector";
+            this.toolTip1.SetToolTip(this.BtnHelp_Projector, resources.GetString("BtnHelp_Projector.ToolTip"));
+            this.BtnHelp_Projector.UseVisualStyleBackColor = false;
+            this.BtnHelp_Projector.Click += new System.EventHandler(this.BtnHelp_Click);
+            // 
             // GbProjector
             // 
             this.GbProjector.Controls.Add(this.CbProjectorScaleEnable);
@@ -11429,6 +11563,16 @@ namespace GrblPlotter
             this.tabPage33.Name = "tabPage33";
             this.tabPage33.UseVisualStyleBackColor = true;
             // 
+            // BtnHelp_Misc2
+            // 
+            this.BtnHelp_Misc2.BackColor = System.Drawing.Color.SkyBlue;
+            resources.ApplyResources(this.BtnHelp_Misc2, "BtnHelp_Misc2");
+            this.BtnHelp_Misc2.Name = "BtnHelp_Misc2";
+            this.BtnHelp_Misc2.Tag = "id=form-setup-5#misc";
+            this.toolTip1.SetToolTip(this.BtnHelp_Misc2, resources.GetString("BtnHelp_Misc2.ToolTip"));
+            this.BtnHelp_Misc2.UseVisualStyleBackColor = false;
+            this.BtnHelp_Misc2.Click += new System.EventHandler(this.BtnHelp_Click);
+            // 
             // groupBox37
             // 
             this.groupBox37.Controls.Add(this.numericUpDown17);
@@ -11780,112 +11924,22 @@ namespace GrblPlotter
             this.toolTip1.SetToolTip(this.linkLabel1, resources.GetString("linkLabel1.ToolTip"));
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLabel_LinkClicked);
             // 
-            // btnReloadFile
-            // 
-            resources.ApplyResources(this.btnReloadFile, "btnReloadFile");
-            this.btnReloadFile.Name = "btnReloadFile";
-            this.toolTip1.SetToolTip(this.btnReloadFile, resources.GetString("btnReloadFile.ToolTip"));
-            this.btnReloadFile.UseVisualStyleBackColor = true;
-            this.btnReloadFile.Click += new System.EventHandler(this.BtnReloadFile_Click);
-            // 
-            // btnApplyChangings
-            // 
-            resources.ApplyResources(this.btnApplyChangings, "btnApplyChangings");
-            this.btnApplyChangings.Name = "btnApplyChangings";
-            this.toolTip1.SetToolTip(this.btnApplyChangings, resources.GetString("btnApplyChangings.ToolTip"));
-            this.btnApplyChangings.UseVisualStyleBackColor = true;
-            this.btnApplyChangings.Click += new System.EventHandler(this.BtnApplyChangings_Click);
-            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
-            // cBshowImportDialog
+            // checkBox5
             // 
-            resources.ApplyResources(this.cBshowImportDialog, "cBshowImportDialog");
-            this.cBshowImportDialog.Checked = global::GrblPlotter.Properties.Settings.Default.importShowUseCaseDialog;
-            this.cBshowImportDialog.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cBshowImportDialog.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::GrblPlotter.Properties.Settings.Default, "importShowUseCaseDialog", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.cBshowImportDialog.Name = "cBshowImportDialog";
-            this.cBshowImportDialog.UseVisualStyleBackColor = true;
-            // 
-            // BtnHelp_Buttons
-            // 
-            this.BtnHelp_Buttons.BackColor = System.Drawing.Color.SkyBlue;
-            resources.ApplyResources(this.BtnHelp_Buttons, "BtnHelp_Buttons");
-            this.BtnHelp_Buttons.Name = "BtnHelp_Buttons";
-            this.BtnHelp_Buttons.Tag = "id=form-setup-5#custom-buttons";
-            this.toolTip1.SetToolTip(this.BtnHelp_Buttons, resources.GetString("BtnHelp_Buttons.ToolTip"));
-            this.BtnHelp_Buttons.UseVisualStyleBackColor = false;
-            this.BtnHelp_Buttons.Click += new System.EventHandler(this.BtnHelp_Click);
-            // 
-            // BtnHelp_Hotkeys
-            // 
-            this.BtnHelp_Hotkeys.BackColor = System.Drawing.Color.SkyBlue;
-            resources.ApplyResources(this.BtnHelp_Hotkeys, "BtnHelp_Hotkeys");
-            this.BtnHelp_Hotkeys.Name = "BtnHelp_Hotkeys";
-            this.BtnHelp_Hotkeys.Tag = "id=form-setup-5#hotkeys";
-            this.toolTip1.SetToolTip(this.BtnHelp_Hotkeys, resources.GetString("BtnHelp_Hotkeys.ToolTip"));
-            this.BtnHelp_Hotkeys.UseVisualStyleBackColor = false;
-            this.BtnHelp_Hotkeys.Click += new System.EventHandler(this.BtnHelp_Click);
-            // 
-            // BtnHelp_Gamepad
-            // 
-            this.BtnHelp_Gamepad.BackColor = System.Drawing.Color.SkyBlue;
-            resources.ApplyResources(this.BtnHelp_Gamepad, "BtnHelp_Gamepad");
-            this.BtnHelp_Gamepad.Name = "BtnHelp_Gamepad";
-            this.BtnHelp_Gamepad.Tag = "id=form-setup-5#gamepad";
-            this.toolTip1.SetToolTip(this.BtnHelp_Gamepad, resources.GetString("BtnHelp_Gamepad.ToolTip"));
-            this.BtnHelp_Gamepad.UseVisualStyleBackColor = false;
-            this.BtnHelp_Gamepad.Click += new System.EventHandler(this.BtnHelp_Click);
-            // 
-            // BtnHelp_Joystick
-            // 
-            this.BtnHelp_Joystick.BackColor = System.Drawing.Color.SkyBlue;
-            resources.ApplyResources(this.BtnHelp_Joystick, "BtnHelp_Joystick");
-            this.BtnHelp_Joystick.Name = "BtnHelp_Joystick";
-            this.BtnHelp_Joystick.Tag = "id=form-setup-5#joystick";
-            this.toolTip1.SetToolTip(this.BtnHelp_Joystick, resources.GetString("BtnHelp_Joystick.ToolTip"));
-            this.BtnHelp_Joystick.UseVisualStyleBackColor = false;
-            this.BtnHelp_Joystick.Click += new System.EventHandler(this.BtnHelp_Click);
-            // 
-            // BtnHelp_2dview
-            // 
-            this.BtnHelp_2dview.BackColor = System.Drawing.Color.SkyBlue;
-            resources.ApplyResources(this.BtnHelp_2dview, "BtnHelp_2dview");
-            this.BtnHelp_2dview.Name = "BtnHelp_2dview";
-            this.BtnHelp_2dview.Tag = "id=form-setup-5#2dview";
-            this.toolTip1.SetToolTip(this.BtnHelp_2dview, resources.GetString("BtnHelp_2dview.ToolTip"));
-            this.BtnHelp_2dview.UseVisualStyleBackColor = false;
-            this.BtnHelp_2dview.Click += new System.EventHandler(this.BtnHelp_Click);
-            // 
-            // BtnHelp_Projector
-            // 
-            resources.ApplyResources(this.BtnHelp_Projector, "BtnHelp_Projector");
-            this.BtnHelp_Projector.BackColor = System.Drawing.Color.SkyBlue;
-            this.BtnHelp_Projector.Name = "BtnHelp_Projector";
-            this.BtnHelp_Projector.Tag = "id=form-setup-5#projector";
-            this.toolTip1.SetToolTip(this.BtnHelp_Projector, resources.GetString("BtnHelp_Projector.ToolTip"));
-            this.BtnHelp_Projector.UseVisualStyleBackColor = false;
-            this.BtnHelp_Projector.Click += new System.EventHandler(this.BtnHelp_Click);
-            // 
-            // BtnHelp_Misc2
-            // 
-            this.BtnHelp_Misc2.BackColor = System.Drawing.Color.SkyBlue;
-            resources.ApplyResources(this.BtnHelp_Misc2, "BtnHelp_Misc2");
-            this.BtnHelp_Misc2.Name = "BtnHelp_Misc2";
-            this.BtnHelp_Misc2.Tag = "id=form-setup-5#misc";
-            this.toolTip1.SetToolTip(this.BtnHelp_Misc2, resources.GetString("BtnHelp_Misc2.ToolTip"));
-            this.BtnHelp_Misc2.UseVisualStyleBackColor = false;
-            this.BtnHelp_Misc2.Click += new System.EventHandler(this.BtnHelp_Click);
+            resources.ApplyResources(this.checkBox5, "checkBox5");
+            this.checkBox5.Checked = global::GrblPlotter.Properties.Settings.Default.slowdownHeighmap;
+            this.checkBox5.DataBindings.Add(new System.Windows.Forms.Binding("Checked", global::GrblPlotter.Properties.Settings.Default, "slowdownHeighmap", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // ControlSetupForm
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.cBshowImportDialog);
-            this.Controls.Add(this.btnApplyChangings);
-            this.Controls.Add(this.btnReloadFile);
             this.Controls.Add(this.tabControl_Level1);
             this.Name = "ControlSetupForm";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SetupForm_FormClosing);
@@ -11893,6 +11947,7 @@ namespace GrblPlotter
             this.SizeChanged += new System.EventHandler(this.ControlSetupForm_SizeChanged);
             this.tabControl_Level1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.tabControl1_Level2.ResumeLayout(false);
             this.graphicImport1.ResumeLayout(false);
             this.BtnHelp_Pathmodification.ResumeLayout(false);
@@ -12060,6 +12115,8 @@ namespace GrblPlotter
             this.graphicImport2.ResumeLayout(false);
             this.tab1_2gB1.ResumeLayout(false);
             this.tab1_2gB1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nUDImportGCFeedXY)).EndInit();
             this.tab1_2gB2.ResumeLayout(false);
             this.tab1_2gB2.PerformLayout();
@@ -12129,6 +12186,8 @@ namespace GrblPlotter
             this.tabPage13.ResumeLayout(false);
             this.groupBox24.ResumeLayout(false);
             this.groupBox24.PerformLayout();
+            this.tab5gB2.ResumeLayout(false);
+            this.tab5gB2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.gBLoggingOptions.ResumeLayout(false);
@@ -12144,8 +12203,6 @@ namespace GrblPlotter
             this.tab5gB1.PerformLayout();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
-            this.tab5gB2.ResumeLayout(false);
-            this.tab5gB2.PerformLayout();
             this.groupBox25.ResumeLayout(false);
             this.groupBox25.PerformLayout();
             this.tabPage26.ResumeLayout(false);
@@ -12336,7 +12393,6 @@ namespace GrblPlotter
             this.tab11gB2.ResumeLayout(false);
             this.tab11gB2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -13414,5 +13470,10 @@ namespace GrblPlotter
         private System.Windows.Forms.Button BtnHelp_2dview;
         private System.Windows.Forms.Button BtnHelp_Projector;
         private System.Windows.Forms.Button BtnHelp_Misc2;
+        private System.Windows.Forms.NumericUpDown numericUpDown18;
+        private System.Windows.Forms.NumericUpDown numericUpDown19;
+        private System.Windows.Forms.Label label101;
+        private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.CheckBox checkBox5;
     }
 }

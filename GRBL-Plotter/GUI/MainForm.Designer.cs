@@ -576,9 +576,9 @@ namespace GrblPlotter
             this.fCTBCode.AutoIndentCharsPatterns = "\r\n^\\s*[\\w\\.]+\\s*(?<range>=)\\s*(?<range>[^;]+);";
             resources.ApplyResources(this.fCTBCode, "fCTBCode");
             this.fCTBCode.BackBrush = null;
-            this.fCTBCode.CharCnWidth = 13;
-            this.fCTBCode.CharHeight = 12;
-            this.fCTBCode.CharWidth = 7;
+            this.fCTBCode.CharCnWidth = 15;
+            this.fCTBCode.CharHeight = 15;
+            this.fCTBCode.CharWidth = 8;
             this.fCTBCode.ContextMenuStrip = this.cmsFCTB;
             this.fCTBCode.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.fCTBCode.DelayedTextChangedInterval = 200;
@@ -601,6 +601,7 @@ namespace GrblPlotter
             // 
             // cmsFCTB
             // 
+            this.cmsFCTB.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsFCTB.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.unDo3ToolStripMenuItem,
             this.toolStripSeparator13,
@@ -2143,6 +2144,7 @@ namespace GrblPlotter
             // 
             // cmsPictureBox
             // 
+            this.cmsPictureBox.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.cmsPictureBox.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.unDo2ToolStripMenuItem,
             this.toolStripSeparator17,
@@ -2609,6 +2611,7 @@ namespace GrblPlotter
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.createGCodeToolStripMenuItem,
@@ -3374,6 +3377,7 @@ namespace GrblPlotter
             // 
             // statusStrip1
             // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel0,
             this.toolStripStatusLabel1,

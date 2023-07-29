@@ -1194,7 +1194,6 @@ namespace GrblPlotter
         {
             int y = Height;
             tabControl_Level1.Height = y - 64;
-            btnApplyChangings.Top = y - 64;
             gBToolChange.Height = y - 98;
             tab2gB2.Height = y - 192;
             dGVToolList.Height = y - 64;
@@ -2218,6 +2217,7 @@ namespace GrblPlotter
 
         }
 
+        /*
         private void OnGcodeHeaderClick(object sender, EventArgs e)
         {
             using (var form = new GrblPlotter.GUI.GCodeHeaderFooterForm())
@@ -2240,6 +2240,6 @@ namespace GrblPlotter
                 if (form.ShowDialog() == DialogResult.Yes)
                     tBImportGCFooter.Text = form.GetGcode();
             }
-        }
+        }*/
     }
 }

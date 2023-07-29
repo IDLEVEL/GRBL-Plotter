@@ -110,7 +110,9 @@ namespace GrblPlotter
             var feedVal = GcodeXYFeed;
             var forceApplyFeed = false;
 
-            if (Settings.Default.feedSlowDownCoef != 0 && !IsHeightMapApply)
+            var doSlowdown = Settings.Default.slowdownHeighmap ? IsHeightMapApply : !IsHeightMapApply;
+
+            if (doSlowdown && Settings.Default.feedSlowDownCoeff != 0)
             {
                 var angle = Math.Abs((Math.Atan2((lastx - mx), (lasty - my)) * 180.0) / Math.PI);
 
@@ -122,7 +124,7 @@ namespace GrblPlotter
                 if (angle < feedSlowDownAngle)
                 {
                     var dec = ((feedSlowDownAngle - angle) / feedSlowDownAngle) *
-                        (1.0 - ((double)Settings.Default.feedSlowDownCoef)) * feedVal;
+                        (1.0 - ((double)Settings.Default.feedSlowDownCoeff)) * feedVal;
 
                     feedVal = (float)Math.Round(feedVal - dec);
                 }

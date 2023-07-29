@@ -29,6 +29,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace GrblPlotter
 {
@@ -51,11 +52,14 @@ namespace GrblPlotter
         /// </summary>
         internal static string ApplyHeightMap(HeightMap Map)//IList<string> oldCode,
         {
+            Gcode.IsHeightMapApply = true;
             heightMapGridWidth = (float)Map.GridX;
             //getGCodeLines(oldCode, null, null, true);                // read gcode and process subroutines
             IList<string> tmp = CreateGCodeProg(true, true, false, ConvertMode.Nothing).Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.None).ToList();      // split lines and arcs createGCodeProg(bool replaceG23, bool applyNewZ, bool removeZ, HeightMap Map=null)
             GetGCodeLines(tmp, null, null, false);                  // reload code
-            return CreateGCodeProg(false, false, true, ConvertMode.Nothing, Map);        // apply new Z-value;
+            var res = CreateGCodeProg(false, false, true, ConvertMode.Nothing, Map);        // apply new Z-value;
+            Gcode.IsHeightMapApply = false;
+            return res;
         }
 
         /// <summary>
@@ -75,9 +79,6 @@ namespace GrblPlotter
         { return CreateGCodeProg(false, false, false, ConvertMode.Nothing); }
         private static string CreateGCodeProg(bool replaceG23, bool splitMoves, bool applyNewZ, ConvertMode specialCmd, HeightMap Map = null)
         {
-            if (applyNewZ)
-                Gcode.IsHeightMapApply = true;
-
             Logger.Debug("+++ CreateGCodeProg replaceG23: {0}, splitMoves: {1}, applyNewZ: {2}, specialCmd: {3}", replaceG23, splitMoves, applyNewZ, specialCmd);
             if (gcodeList == null) return "";
             pathMarkSelection.Reset();
@@ -276,8 +277,6 @@ namespace GrblPlotter
                 isArc = ((gcline.motionMode == 2) || (gcline.motionMode == 3));
                 coordList.Add(new CoordByLine(iCode, gcline.figureNumber, (XyzPoint)gcline.actualPos, (XyzPoint)gcline.actualPos, gcline.motionMode, gcline.alpha, isArc));
             }
-
-            Gcode.IsHeightMapApply = false;
 
             return newCode.ToString().Replace(',', '.');
         }
